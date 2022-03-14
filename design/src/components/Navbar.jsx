@@ -31,6 +31,9 @@ const SearchContainer = styled.div`
 `;
 const Input = styled.input`
   border: none;
+  &:focus {
+    outline: none;
+  }
 `;
 const Center = styled.div`
   flex: 1;
@@ -69,7 +72,7 @@ const Navbar = () => {
           <MenuItem>REGISTER</MenuItem>
           <MenuItem>SIGN IN</MenuItem>
           <MenuItem>
-            <Badge badgeContent={4} color="primary" >
+            <Badge badgeContent={4} color="error">
               <MdShoppingCart style={{ fontSize: 25 }} />
             </Badge>
           </MenuItem>
