@@ -2,7 +2,7 @@ export const sliderItems = [
   {
     id: 1,
     img: "https://live.staticflickr.com/3750/11300078694_6154793c72_h.jpg",
-    title: "SUMMER SALE",
+    title: "NOW ON SALE",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
     bg: "f5fafd",
   },
@@ -16,7 +16,7 @@ export const sliderItems = [
   {
     id: 3,
     img: "https://live.staticflickr.com/8095/8544581382_3b93cf6982_k.jpg",
-    title: "LOUNGEWEAR LOVE",
+    title: "Welcome Beautiful Winter",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
     bg: "fbf0f4",
   },
