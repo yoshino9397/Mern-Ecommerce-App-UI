@@ -1,12 +1,12 @@
 import React from "react";
 import Home from "./pages/Home";
-import Login from "./pages/Login";
+import Cart from "./pages/Cart";
 
 function App() {
   return (
     <>
       {/* <Home /> */}
-      <Login />
+      <Cart />
     </>
   );
 }
