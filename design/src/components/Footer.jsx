@@ -10,13 +10,16 @@ import {
   FaCcDiscover,
 } from "react-icons/fa";
 import { SiAmericanexpress } from "react-icons/si";
-import { mobile } from "../responsive";
+import { device } from "../responsive";
 
 import styled from "styled-components";
 
 const Container = styled.div`
   display: flex;
-  ${mobile({ flexDirection: "column" })}
+  @media ${device.sm} {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const Left = styled.div`
@@ -26,14 +29,24 @@ const Left = styled.div`
   padding: 20px;
 `;
 
-const Logo = styled.h1``;
+const Logo = styled.h1`
+  @media ${device.sm} {
+    text-align: center;
+  }
+`;
 
 const Desc = styled.p`
   margin: 20px 0px;
+  @media ${device.sm} {
+    text-align: center;
+  }
 `;
 
 const SocialContainer = styled.div`
   display: flex;
+  @media ${device.sm} {
+    justify-content: space-evenly;
+  }
 `;
 
 const SocialIcon = styled.div`
@@ -46,12 +59,19 @@ const SocialIcon = styled.div`
   align-items: center;
   justify-content: center;
   margin-right: 20px;
+  @media ${device.sm} {
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+  }
 `;
 
 const Center = styled.div`
   flex: 1;
   padding: 20px;
-  ${mobile({ display: "none" })}
+  @media ${device.sm} {
+    display: none;
+  }
 `;
 
 const Title = styled.h3`
@@ -74,7 +94,9 @@ const ListItem = styled.li`
 const Right = styled.div`
   flex: 1;
   padding: 20px;
-  ${mobile({ backgroundColor: "#fff8f8" })}
+  @media ${device.sm} {
+    background-color: "#fff8f8";
+  }
 `;
 
 const ContactItem = styled.div`
@@ -138,7 +160,8 @@ const Footer = () => {
       <Right>
         <Title>Contact</Title>
         <ContactItem>
-          <MdRoom style={{ marginRight: "10px" }} /> 476 5th Ave, New York, 10018
+          <MdRoom style={{ marginRight: "10px" }} /> 476 5th Ave, New York,
+          10018
         </ContactItem>
         <ContactItem>
           <MdPhone style={{ marginRight: "10px" }} /> +1 234 56 78
