@@ -4,11 +4,15 @@ import styled from "styled-components";
 import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import { device } from "../responsive";
 
 const Container = styled.div``;
 
 const Wrapper = styled.div`
   padding: 20px;
+  @media ${device.sm} {
+    padding: 10px;
+  }
 `;
 
 const Title = styled.h1`
@@ -33,7 +37,12 @@ const TopButton = styled.button`
   color: ${(props) => props.type === "filled" && "white"};
 `;
 
-const TopTexts = styled.div``;
+const TopTexts = styled.div`
+  @media ${device.sm} {
+    display: none;
+  }
+`;
+
 const TopText = styled.span`
   text-decoration: underline;
   cursor: pointer;
@@ -43,6 +52,9 @@ const TopText = styled.span`
 const Bottom = styled.div`
   display: flex;
   justify-content: space-between;
+  @media ${device.sm} {
+    flex-direction: column;
+  }
 `;
 
 const Info = styled.div`
@@ -52,6 +64,9 @@ const Info = styled.div`
 const Product = styled.div`
   display: flex;
   justify-content: space-between;
+  @media ${device.sm} {
+    flex-direction: column;
+  }
 `;
 
 const ProductDetail = styled.div`
@@ -99,7 +114,10 @@ const ProductAmountContainer = styled.div`
 
 const ProductAmount = styled.div`
   font-size: 24px;
-  margin: 5px;
+  margin: 5px 12px;
+  @media ${device.sm} {
+    margin-bottom: 10px;
+  }
 `;
 
 const ProductPrice = styled.div`
