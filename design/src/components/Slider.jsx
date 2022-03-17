@@ -78,6 +78,7 @@ const Button = styled.button`
   font-size: 20px;
   background-color: transparent;
   cursor: pointer;
+  margin-bottom: 20px;
 `;
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);

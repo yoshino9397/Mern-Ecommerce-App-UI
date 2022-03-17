@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../responsive";
 
 const Container = styled.div`
   width: 100vw;
@@ -19,6 +20,9 @@ const Wrapper = styled.div`
   width: 40%;
   padding: 20px;
   background-color: rgba(255, 239, 213, 0.6);
+  @media ${device.sm} {
+    width: 75%;
+  }
 `;
 
 const Title = styled.h1`
